@@ -9,13 +9,15 @@ Terraform modules for everything.
 - Azurerm provider: Version v2.20.0
 
 #### Parameters to pass
-1. source:              (Required) source of this module
-2. name:                (Required) name of the virtual net
-3. resource_group_name: (Required) name of the virtual network
-4. address_space:       (Required) address space of the virtual network
-5. env:                 (Optional) name of the environment
-6. team_tag:            (Optional) tag a team
-7. creator:             (Optional) tag a creator
+| Parameters | Need | Description
+| ------ | ------ | ------ |
+source |(Required)|source of this module
+name|(Required)|name of the virtual net
+resource_group_name|(Required)|name of the virtual network
+address_space|(Required)|address space of the virtual network
+env|(Optional)|name of the environment
+team_tag|(Optional)|tag a team
+creator|(Optional)|tag a creator
 
 #### Usage:
 ###### Import existing Resource Group
