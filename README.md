@@ -43,6 +43,14 @@ provider "azurerm" {
   features {}
 }
 
+module "az_resource_group" {
+  source   = "../terraform-azure-resource-group"
+  name     = "ankesh-workspace"
+  location = "westeurope"
+  team_tag = "DevOps"
+  creator  = "ankesh"
+}
+
 module "az_virtual_network" {
   source              = "../terraform-azure-virtual-network"
   name                = "ankesh-vnet"

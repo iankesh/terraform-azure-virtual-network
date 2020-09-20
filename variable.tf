@@ -1,11 +1,11 @@
 variable "address_space" {
-  description = "The address space that is used by the virtual network."
+  description = "(Required) The address space that is used by the virtual network."
   type        = string
   default     = "10.0.2.0/24"
 }
 
 variable "resource_group_name" {
-  description = "The name of an existing resource group to be imported."
+  description = "(Required) The name of an existing resource group to be imported."
   type        = string
 }
 
@@ -15,13 +15,8 @@ variable "name" {
 }
 
 variable "env" {
-  description = "(Required) name of the resource group"
-  default     = "cloud"
-}
-
-variable "location" {
-  description = "(Required) location where this resource has to be created"
-  default     = "westeurope"
+  description = "(Optional) name of the resource group"
+  default     = "dev"
 }
 
 variable "team_tag" {
