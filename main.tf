@@ -9,9 +9,9 @@ resource "azurerm_virtual_network" "az_vnet" {
   address_space       = [var.address_space]
 
   tags = {
-    Region      = "data.azurerm_resource_group.azure_rg.location"
-    Team        = "var.team_tag"
-    Environment = "var.env"
-    Creator     = "var.creator"
+    Region      = data.azurerm_resource_group.azure_rg.location
+    Team        = var.team_tag
+    Environment = var.env
+    Creator     = var.creator
   }
 }
